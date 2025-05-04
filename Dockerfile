@@ -66,7 +66,7 @@ RUN \
   apt install anydesk && \
   echo "**** install rustdesk ****" && \
   wget https://github.com/rustdesk/rustdesk/releases/download/1.3.9/rustdesk-1.3.9-x86_64.deb && \
-  apt install ./rustdesk-1.3.9-x86_64.deb && \
+  apt install ./rustdesk-1.3.9-x86_64.deb -y && \
   echo "**** cleanup ****" && \
   apt-get autoclean && \
   rm -rf \
