@@ -53,3 +53,9 @@ docker run --name=ldesk -e PUID=1000 -e PGID=1000 --security-opt seccomp=unconfi
 ```
 
 now, everytime you come back to your codespace webtop should start automaticaly
+
+To use codesandbox, remove persistence volume before docker run. like this:
+```
+docker run --name=ldesk -e PUID=1000 -e PGID=1000 --security-opt seccomp=unconfined -e TZ=Etc/UTC -e SUBFOLDER=/ -e TITLE=ldesk -p 3000:3000 --shm-size="2gb"  --restart unless-stopped ldesk
+```
+should now work in codesandbox but data is lost when machine shuts down.
