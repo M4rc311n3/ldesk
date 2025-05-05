@@ -6,6 +6,8 @@ a better version of https://codeberg.org/Mollomm1/W10-On-Github-Codespaces
 
 > it also works on [gitpot](https://gitpod.io/workspaces)
 
+> it also works on [codesandbox](https://codesandbox.io/) but no persistance WIP.
+
 # Supported Stuff
 
 * 1080p 60fps
